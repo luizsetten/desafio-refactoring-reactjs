@@ -8,7 +8,7 @@ import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 import { FoodType } from '../../types';
 
-export const Dashboard = () => {
+const Dashboard = () => {
   const [foods, setFoods] = useState<FoodType[]>([]);
   const [editingFood, setEditingFood] = useState<FoodType>({} as FoodType);
   const [modalOpen, setModalOpen] = useState(false);
